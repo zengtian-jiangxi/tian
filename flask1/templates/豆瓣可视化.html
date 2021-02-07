@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../static/echarts.min.js"></script>
+</head>
+<body>
+<div id="12" style="wigth:100%;height:700px"></div>
+</body>
+</html>
+<script>
+    function fun(){
+
+
+        var we=echarts.init(document.getElementById('12'));
+
+        option={
+
+
+            title:{
+                  text:'豆瓣上映电影对比',
+                  'left':'center'
+             },
+
+            tooltip:{
+                trigger:'axis'
+            },
+            legend:{
+            },
+
+            xAxis:{
+                type:'category'
+                name:'电影名字'
+                data:va
+            },
+            yAxis:{
+                name:'人数',
+                min:0
+            }
+
+
+    }
+    fun()
+
+
+</script>
